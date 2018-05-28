@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SearchController">
+   <children>
+      <ImageView fitHeight="530.0" fitWidth="742.0" layoutX="-48.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/generic_thumbnail.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="23.0" prefHeight="97.0" prefWidth="474.0" text="News Searching">
+         <font>
+            <Font name="Elephant Italic" size="48.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5444444444444445" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#ddcece" />
+                  <Stop color="#f1fcf5" offset="0.15325670498084262" />
+                  <Stop color="#eee9e9" offset="0.40229885057471254" />
+                  <Stop color="#f27575" offset="0.6254295532646048" />
+                  <Stop color="#e9f2e9" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="searchField" blendMode="SCREEN" layoutX="56.0" layoutY="152.0" prefHeight="39.0" prefWidth="236.0" promptText="Searching By Name" style="-fx-background-radius: 10;" />
+      <Button fx:id="searchnews" blendMode="SCREEN" layoutX="400.0" layoutY="155.0" mnemonicParsing="false" onAction="#handlesearchnewsButton" style="-fx-background-radius: 100;" text="Search" textFill="#830000">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchpageback" blendMode="SCREEN" layoutX="362.0" layoutY="325.0" mnemonicParsing="false" onAction="#handlesearchbackButton" style="-fx-background-radius: 100;" text="back to news page" textFill="#830000">
+         <font>
+            <Font name="Corbel Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

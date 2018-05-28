@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: powderblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UserpageController">
+   <children>
+      <Label layoutX="202.0" layoutY="18.0" prefHeight="42.0" prefWidth="197.0" text="My page">
+         <font>
+            <Font name="Elephant" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#791b1b" />
+                  <Stop color="#bf6868" offset="0.2125054311332306" />
+                  <Stop color="#791b1b" offset="0.6743295019157086" />
+                  <Stop color="#653d3d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TabPane layoutX="51.0" layoutY="103.0" prefHeight="250.0" prefWidth="499.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="My information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="498.0" style="-fx-background-color: turquoise blue;">
+                     <children>
+                        <Label layoutX="57.0" layoutY="46.0" text="Name:" textFill="#282726">
+                           <font>
+                              <Font name="Bodoni MT Black" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="57.0" layoutY="88.0" text="Major" textFill="#363333">
+                           <font>
+                              <Font name="Bodoni MT Black" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="57.0" layoutY="135.0" text="Email" textFill="#363131">
+                           <font>
+                              <Font name="Bodoni MT Black" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="name" editable="false" layoutX="169.0" layoutY="42.0" style="-fx-background-color: turquoise blue;" />
+                        <TextField fx:id="major" editable="false" layoutX="169.0" layoutY="93.0" style="-fx-background-color: turquoise blue;" />
+                        <TextField fx:id="username" layoutX="169.0" layoutY="140.0" style="-fx-background-color: turquoise blue;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="My evaluation">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: turquoise blue;">
+                     <children>
+                        <TextArea fx:id="showComment" editable="false" layoutX="50.0" layoutY="3.0" prefHeight="200.0" prefWidth="412.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="mypagelogout" layoutX="434.0" layoutY="54.0" mnemonicParsing="false" onAction="#handlemypagelogoutButton" prefHeight="25.0" prefWidth="135.0" text="Logout">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="mypageback" layoutX="427.0" layoutY="361.0" mnemonicParsing="false" onAction="#handlemypagebackButton" prefHeight="25.0" prefWidth="149.0" text="Back news page">
+         <font>
+            <Font name="Arial Unicode MS" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="myusername" layoutX="28.0" layoutY="55.0" style="-fx-background-color: powderblue;" />
+   </children>
+</AnchorPane>

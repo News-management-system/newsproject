@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: slateblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ManagerpageDeleteuserController">
+    <children>
+        <Label layoutX="110.0" prefHeight="106.0" prefWidth="394.0" text="Delete User Management" textFill="#f5e905">
+            <font>
+                <Font name="Baskerville Old Face" size="36.0" />
+            </font>
+        </Label>
+      <Button fx:id="logoutBt" layoutX="384.0" layoutY="319.0" mnemonicParsing="false" onAction="#logoutButton" style="-fx-background-radius: 10;" text="Logout">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteBt" layoutX="286.0" layoutY="319.0" mnemonicParsing="false" onAction="#deleteButton" style="-fx-background-radius: 10;" text="Delete">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="homeBt" layoutX="487.0" layoutY="319.0" mnemonicParsing="false" onAction="#homeButton" style="-fx-background-radius: 10;" text="Home">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tv" layoutX="40.0" layoutY="106.0" prefHeight="165.0" prefWidth="534.0" style="-fx-background-radius: 10;">
+         <columns>
+            <TableColumn fx:id="UserID" prefWidth="106.0" text="UserID" />
+            <TableColumn fx:id="Name" prefWidth="119.0" text="Name" />
+            <TableColumn fx:id="Email" minWidth="8.0" prefWidth="115.0" text="Email" />
+            <TableColumn fx:id="Password" minWidth="0.0" prefWidth="85.0" text="Password" />
+            <TableColumn fx:id="Major" prefWidth="106.0" text="Major" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>
